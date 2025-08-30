@@ -14,19 +14,29 @@ function addEventListenersToButtons() {
   scissorsBtn.addEventListener("click", scissorsKlik);
 }
 
+function hideResults() {
+  draw.classList.add("hidden");
+  win.classList.add("hidden");
+  lose.classList.add("hidden");
+}
+
 function rockKlik() {
+  hideResults();
   //   console.log("ROCK");
   userChoice = "rock";
+
   computerGuess();
 }
 
 function scissorsKlik() {
+  hideResults();
   //   console.log("SCISSORS");
   userChoice = "scissors";
   computerGuess();
 }
 
 function paperKlik() {
+  hideResults();
   //   console.log("PAPER");
   userChoice = "paper";
   computerGuess();
@@ -51,11 +61,9 @@ function animationStarter() {
 }
 
 function animationEnd() {
-  player1.classList.remove("shake");
-  player2.classList.remove("shake");
-
-  player1.classList.remove("rock", "paper", "scissors");
-  player2.classList.remove("rock", "paper", "scissors");
+  player1.classList.remove("shake", "rock", "paper", "scissors");
+  player2.classList.remove("shake", "rock", "paper", "scissors");
+  // player2.classList.remove("shake");
 
   player1.classList.add(userChoice);
   player2.classList.add(computerChoice);
@@ -64,5 +72,11 @@ function animationEnd() {
 }
 
 function showResultScreen() {
-  console.log("Show result screen");
+  if (userChoice === computerChoice) {
+    document.querySelector("#draw").classList.remove("hidden");
+  } else if ((userChoice === "rock" && computerChoice === "scissors") || (userChoice === "paper" && computerChoice === "rock") || (userChoice === "scissors" && computerChoice === "paper")) {
+    document.querySelector("#win").classList.remove("hidden");
+  } else {
+    document.querySelector("#lose").classList.remove("hidden");
+  }
 }
