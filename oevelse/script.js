@@ -42,7 +42,83 @@
 //   console.log(`Hello ${firstName} ${lastName}`);
 // }
 
-presentPet("Tamara", "cat", "Murdi");
-function presentPet(firstName, animalType, animalName) {
-  console.log(`My name is ${firstName}, I have a ${animalType} called ${animalName}`);
+// presentPet("Tamara", "cat", "Murdi");
+// function presentPet(firstName, animalType, animalName) {
+//   console.log(`My name is ${firstName}, I have a ${animalType} called ${animalName}`);
+// }
+
+"use strict";
+// array
+// const people = ["Harry", "Ron", "Hermione"];
+
+//en tom variable til at gemme et resultat
+// let result;
+//For hver af de følgene metoder, gem return-værdien i result og læg mærke til, hvordan hele arrayet ser ud, og de der returneres
+// result = people.push("Draco");   // tilføjer et element til slutningen af arrayet
+// console.log("result", result);
+// console.log("people", people);
+
+// result = people.pop();  // fjerner det sidste element i arrayet
+// console.log("result", result);
+
+// result = people.push("Neville");
+// result = people.push("Luna");
+// result = people.slice(0, 3);  // laver en kopi af arrayet
+// result = people.splice(1, 0, "Cho");  // fjerner eller tilføjer elementer i arrayet
+// people[1] = "Ginny";
+// result = people.push("Fred", "George");
+// result = people.indexOf("Fred");
+// result = people.splice(result, 1);  // fjerner eller tilføjer elementer i arrayet
+
+// konvertere string til array
+// const str = "absdefghijklmn";
+// const arr1 = str.split("");
+// const arr2 = Array.from(str);
+// const arr3 = [...str];
+// console.log("arr1", arr1);
+// console.log("arr2", arr2);
+// console.log("arr3", arr3);
+
+// const array = ["one", "two", "three"];
+// const arrayCopy = [...array];
+// array[1] = "twenty";
+// console.log("arrayCopy", arrayCopy);
+// console.log("array", array);
+
+//Functions callbacks arrows
+// function greeting(firstName) {
+//   return `Hello ${firstName}`;
+// }
+// const sayHi = greeting;
+// console.log(sayHi("Tamara"));
+// console.log(greeting("Freddie"));
+
+// function congreet(firstName) {
+//   return `Hello ${firstName}`;
+// }
+// setTimeout(congreet, 2000, "Tamara");
+
+function hire(person) {
+  person.hired = true;
 }
+function fire(person) {
+  person.hired = false;
+}
+function fireOrHire(action, person) {
+  action(person);
+}
+fireOrHire(hire, person4);
+
+fireOrHire(fire, person3);
+
+const person3 = {
+  firstName: "Harry",
+  lastName: "Potter",
+  hired: false,
+};
+
+const person4 = {
+  firstName: "Fred",
+  lastName: "Weasley",
+  hired: false,
+};
