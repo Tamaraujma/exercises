@@ -1,3 +1,5 @@
+"use strict";
+
 // const bool = true;
 // const num = 41;
 // const str = "Peter";
@@ -47,7 +49,6 @@
 //   console.log(`My name is ${firstName}, I have a ${animalType} called ${animalName}`);
 // }
 
-"use strict";
 // array
 // const people = ["Harry", "Ron", "Hermione"];
 
@@ -98,27 +99,34 @@
 // }
 // setTimeout(congreet, 2000, "Tamara");
 
-function hire(person) {
-  person.hired = true;
-}
-function fire(person) {
-  person.hired = false;
-}
-function fireOrHire(action, person) {
-  action(person);
-}
-fireOrHire(hire, person4);
+// function hire(person) {
+//   person.hired = true;
+// }
+// function fire(person) {
+//   person.hired = false;
+// }
+// function fireOrHire(action, person) {
+//   action(person);
+// }
+// fireOrHire(hire, person4);
 
-fireOrHire(fire, person3);
+// fireOrHire(fire, person3);
 
-const person3 = {
-  firstName: "Harry",
-  lastName: "Potter",
-  hired: false,
-};
+// const person3 = {
+//   firstName: "Harry",
+//   lastName: "Potter",
+//   hired: false,
+// };
 
-const person4 = {
-  firstName: "Fred",
-  lastName: "Weasley",
-  hired: false,
-};
+// const person4 = {
+//   firstName: "Fred",
+//   lastName: "Weasley",
+//   hired: false,
+// };
+
+// callback functions
+const people = ["Harry", "Ron", "Hermione", "Neville"];
+function testParms(a, b, c, d) {
+  console.log(`a: ${a}, b: ${b}, c: ${c}, d: ${d}`);
+}
+people.forEach(testParms);
