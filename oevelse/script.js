@@ -125,8 +125,52 @@
 // };
 
 // callback functions
-const people = ["Harry", "Ron", "Hermione", "Neville"];
-function testParms(a, b, c, d) {
-  console.log(`a: ${a}, b: ${b}, c: ${c}, d: ${d}`);
-}
-people.forEach(testParms);
+// const people = ["Harry", "Ron", "Hermione", "Neville"];
+// function testParms(a, b, c, d) {
+//   console.log(`a: ${a}, b: ${b}, c: ${c}, d: ${d}`);
+// }
+// people.forEach(testParms);
+
+//Objects
+// let person1 = {
+//   firstName: "Tamara",
+//   age: 23,
+//   student: true,
+// };
+
+// console.log(person1.lastName);
+// person1.lastName = "Ujmajuridze";
+// console.log(person1.lastName);
+// person1.lastName = undefined;
+// console.log(person1.lastName);
+// delete person1.lastName;
+// console.log("middleName: ", person1.middleName);
+// console.log("middleName:", person1.middleName);
+// console.log("person1:", person1);
+
+// const person1 = {
+//   firstName: "Tamara",
+//   age: 23,
+//   student: true,
+// };
+
+// console.log(person1);
+// person1.age++;
+// console.log(person1);
+
+//Strings
+const name = "Albus Percival Wulfric Brian Dumbledore";
+//1. hvad er det totale antal af karakterer inklusive mellemrum?
+console.log(name.length);
+
+// 2. Hvilken karakter er der på index 2?
+console.log(name[2]);
+
+// 3. Hvilken karakter er der på index 6?
+console.log(name[6]);
+
+// 4. Hvilket index har det første D i Dumbledore?
+console.log(name.indexOf("D"));
+
+// 5. Hvilket index har sidste e i Dumbledore?
+console.log(name.indexOf("e"));
