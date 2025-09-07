@@ -159,18 +159,24 @@
 // console.log(person1);
 
 //Strings
-const name = "Albus Percival Wulfric Brian Dumbledore";
-//1. hvad er det totale antal af karakterer inklusive mellemrum?
-console.log(name.length);
+// const name = "Albus Percival Wulfric Brian Dumbledore";
+// //1. hvad er det totale antal af karakterer inklusive mellemrum?
+// console.log(name.length);
 
-// 2. Hvilken karakter er der på index 2?
-console.log(name[2]);
+// // 2. Hvilken karakter er der på index 2?
+// console.log(name[2]);
 
-// 3. Hvilken karakter er der på index 6?
-console.log(name[6]);
+// // 3. Hvilken karakter er der på index 6?
+// console.log(name[6]);
 
-// 4. Hvilket index har det første D i Dumbledore?
-console.log(name.indexOf("D"));
+// // 4. Hvilket index har det første D i Dumbledore?
+// console.log(name.indexOf("D"));
 
-// 5. Hvilket index har sidste e i Dumbledore?
-console.log(name.indexOf("e"));
+// // 5. Hvilket index har sidste e i Dumbledore?
+// console.log(name.indexOf("e"));
+
+
+[data-filter="fox"]{
+  background-color: brown;
+  color: black;
+}
