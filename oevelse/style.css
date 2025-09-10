@@ -1,9 +1,13 @@
-/* [data-filter="fox"] {
-  background-color: brown;
+[data-filter="fox"] {
+  --background-col: brown;
   color: black;
 }
 
 [data-filter="bat"] {
-  background-color: black;
+  --background-col: black;
   color: white;
-} */
+}
+
+h1 {
+  background-color: var(--background-col);
+}

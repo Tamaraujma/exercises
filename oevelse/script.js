@@ -175,8 +175,12 @@
 // // 5. Hvilket index har sidste e i Dumbledore?
 // console.log(name.indexOf("e"));
 
-
-[data-filter="fox"]{
-  background-color: brown;
-  color: black;
+document.querySelector("button").addEventListener("click", klik);
+function klik() {
+  const h1 = document.querySelector("h1");
+  if (h1.dataset.filter === "bat") {
+    h1.dataset.filter = "fox";
+  } else {
+    h1.dataset.filter = "bat";
+  }
 }

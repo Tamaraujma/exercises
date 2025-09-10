@@ -18,7 +18,3 @@ const lastName = name.substring(lastSpace + 1);
 console.log(firstName);
 console.log(middleName);
 console.log(lastName);
-
-// Peter
-// Heronimous
-// Lind
