@@ -3,7 +3,7 @@ const btn = document.getElementById("netflix-btn");
 const progress = document.getElementById("progress");
 
 // Animationens varighed i millisekunder
-let duration = 3000; // 3 sekunder
+let duration = 4000; // 4 sekunder
 
 // Variabler til animationens tilstand
 let startTime;
@@ -28,7 +28,7 @@ function animateProgress(timestamp) {
   }
 }
 
-// Funktion der afbryder animationen hvis musen bevæges
+//Funktion der afbryder animationen hvis musen bevæges
 function interruptAnimation() {
   if (!finished && !interrupted) {
     interrupted = true;

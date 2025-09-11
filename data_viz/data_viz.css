@@ -1,0 +1,29 @@
+#inQueue {
+  font-size: 3rem;
+  transition: transform 0.3s;
+  margin-left: 2rem;
+}
+
+#inQueue.grow {
+  transform: scale(1.5);
+}
+
+#progress-container {
+  width: 500px;
+  height: 50px;
+  background: #eee;
+  border-radius: 15px;
+  margin-top: 20px;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #d880d4;
+  transition: width 0.5s;
+}
+
+h1 {
+  margin-left: 2rem;
+}
