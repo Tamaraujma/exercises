@@ -1,0 +1,122 @@
+[data-theme="dark"] {
+  background-color: #1a3b1a;
+  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  --header-bg-col: #234823;
+}
+[data-theme="dark"] header {
+  background: var(--header-bg-col);
+}
+[data-theme="dark"] header,
+[data-theme="dark"] main,
+[data-theme="dark"] footer {
+  background-color: #234823;
+  border-bottom: 2px solid #333;
+}
+
+[data-theme="dark"] h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 8px black;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Justerer vertikalt */
+  justify-content: space-between; /* Fordeler elementerne */
+  margin: 0 2rem 2rem 2rem; /* kun bund og sider */
+  padding: 1rem 2rem;
+  border: 1px solid #222;
+  border-radius: 5px;
+  background: var(--header-bg-col, inherit);
+}
+
+h1 {
+  margin-left: 5rem;
+}
+
+select {
+  margin-right: 5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  margin: 2rem 2rem 0 2rem; /* top, højre, bund, venstre */
+  padding: 2rem; /* indvendig afstand */
+  padding-bottom: 5rem;
+  border: 1px solid #222; /* evt. for at fremhæve kanten */
+  border-radius: 5px; /* evt. afrundede hjørner */
+}
+
+footer {
+  margin: 0 2rem 2rem 2rem; /* kun bund og sider */
+  padding: 1rem 2rem;
+  border: 1px solid #222;
+  border-radius: 5px;
+}
+
+[data-theme="hawaii"] {
+  --header-bg-col: #f9f871;
+  background-color: #e96ca7;
+  color: black;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+[data-theme="hawaii"] header {
+  background: var(--header-bg-col);
+}
+
+[data-theme="hawaii"] header,
+[data-theme="hawaii"] main {
+  background-color: #f9f871; /* gul header og main */
+}
+
+[data-theme="hawaii"] main {
+  background-color: #7ffcff; /* lyseblå main */
+}
+
+[data-theme="hawaii"] footer {
+  background-color: #e85c2c; /* orange footer */
+  color: #222;
+}
+
+[data-theme="hawaii"] h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 8px #222;
+}
+
+[data-theme="beige"] {
+  --header-bg-col: #f7efdf;
+  background-color: #e9ecd1; /* lys beige baggrund */
+  color: #b59c7d; /* brun tekst */
+  font-family: "Montserrat", Arial, sans-serif;
+}
+[data-theme="beige"] header {
+  background: var(--header-bg-col);
+}
+[data-theme="beige"] header,
+[data-theme="beige"] main {
+  background-color: #f7efdf; /* lysere beige til header og main */
+}
+
+[data-theme="beige"] main {
+  background-color: #f7efdf; /* samme som header */
+}
+
+[data-theme="beige"] footer {
+  background-color: #f7efdf; /* samme som main */
+  color: #b59c7d;
+}
+
+[data-theme="beige"] h1 {
+  font-size: 4rem;
+  color: #b59c7d;
+  text-shadow: none;
+}
